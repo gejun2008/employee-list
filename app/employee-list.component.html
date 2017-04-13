@@ -1,0 +1,12 @@
+<ul class="employeelist">
+    <li *ngFor="let employee of employees, let i = index">
+        <div class="employeeItem" (click)="clickBio(i)">
+        {{employee.name}}
+        </div>
+        <ul class="employeebio" *ngIf="showIndex == i" (click)="showbio(employee.bio)">
+            <li>{{employee.bio.state}}</li>
+            <li>{{employee.bio.sex}}</li>
+            <li>{{employee.bio.age}}</li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,4 @@
+.employeelist .employeeItem{width:100%;height:50px;border-top:1px solid white;line-height:50px;text-align:left;background-color:#A4D3EE;color:white;padding-left:10px}
+.employeelist .employeebio{text-align:left;padding-left:10px}
+
+.employeebio li{text-align:left;padding-left:10px; font-size: 15px; color: blue}
