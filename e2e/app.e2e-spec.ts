@@ -1,15 +1,22 @@
 import { browser, element, by } from 'protractor';
 
-describe('QuickStart E2E Tests', function () {
-
-  let expectedMsg = 'Hello Angular';
+describe('employee list', function () {
 
   beforeEach(function () {
     browser.get('');
   });
 
-  it('should display: ' + expectedMsg, function () {
-    expect(element(by.css('h1')).getText()).toEqual(expectedMsg);
+  it('should list all results', function () {
+    expect(element.all(by.css('.employeeItem')).count()).toEqual(5);
+
+    element.all(by.css('.employeeItem')).get(0).click();
+
+    expect(element(by.css('.employeebio')).isPresent()).toBeTruthy();
+
+    element(by.css('.employeebio')).click();
   });
 
 });
+
+
+
