@@ -27,8 +27,8 @@ it('should create component', () => expect(comp).toBeDefined() );
 
 <h4>test employee list display 5 list items</h4>
 it('should display all employee list', () => {
-    fixture.detectChanges();//employee-list component
-    const h1 = de.nativeElement; //get all list element
+    fixture.detectChanges();
+    const h1 = de.nativeElement;
     expect(h1.children.length).toEqual(5); 
 
   });
